@@ -56,7 +56,7 @@ public class Main {
 //        //Create all threads for product
 //        ArrayList<Thread> prodThreads = new ArrayList<>();
 //        for (int rows = 0; rows < matrix_a.length; rows++) {
-//            MatrixProd thr = new MatrixProd(rows);
+//            MatrixProdab thr = new MatrixProdab(rows);
 //            prodThreads.add(thr);
 //            thr.start();
 //        }
@@ -72,9 +72,9 @@ public class Main {
 //        }
 //
 //        // print prod matrix
-//        for (int i = 0; i < matrix_prod.length; i++) {
-//            for (int j = 0; j < matrix_prod[0].length; j++) {
-//                System.out.print(matrix_prod[i][j]+"\t");
+//        for (int i = 0; i < matrix_prod_ab.length; i++) {
+//            for (int j = 0; j < matrix_prod_ab[0].length; j++) {
+//                System.out.print(matrix_prod_ab[i][j]+"\t");
 //            }
 //            System.out.println();
 //        }

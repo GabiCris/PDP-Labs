@@ -1,7 +1,10 @@
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
@@ -100,7 +103,7 @@ public class MainLab3 {
                 e.printStackTrace();
             }
         }
-        
+
         executorServiceSum.shutdown();
         if (!executorServiceSum.awaitTermination(10000, TimeUnit.MICROSECONDS)) {
             System.out.println("Still waiting after 10000ms: calling System.exit(0)...");
